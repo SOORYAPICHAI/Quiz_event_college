@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Pick the odd one out</title>
+<!--
+
+https://stackoverflow.com/questions/21479102/how-to-add-zoom-in-out-on-click-to-all-img-html-tags
+
+https://www.w3schools.com/howto/howto_js_accordion.asp
+
+https://www.w3schools.com/w3css/w3css_cards.asp
+
+
+https://www.w3schools.com/whatis/default.asp
+
+-->
+<style>
+body {
+  background-image: url("pngtree_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.w3-container {
+
+margin:auto;
+
+    padding-left:10%;
+    padding-right:10%;
+	
+}
+.container{
+ padding-left:40%;
+    padding-right:40%;
+}
+img {
+    transition: -webkit-transform 0.25s ease;
+    transition: transform 0.25s ease;
+	
+}
+
+img:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+	background:black;
+}
+</style>
+</head>
+<body>
+<div style="padding-left:45%" >
+<h2 style="color:red;font-weight:bold;padding:2%;font-size:3vw">Brain Fizz</h2>
+
+</div>
+<div class="w3-container ">
+ 
+
+  <div class="w3-card-4" style="width:100%;background:white;">
+      <img src="abdulkalam.jpeg" alt="Google Groups" style="width:19%;height:auto;" onclick="style.border='1vw solid green';style.borderRadius='5%';document.getElementById('id01').style.display='block';" >
+  <img src="indraGandhi.jpeg" alt="Google Groups" style="width:19%;height:auto" onclick="style.border='1vw solid red';style.borderRadius='5%';">
+  <img src="manmohanSingh.jpeg" alt="Google Groups" style="width:19%;height:auto" onclick="style.border='1vw solid red';style.borderRadius='5%';"> 
+  <img src="modi.jpeg" alt="Google Groups" style="width:20%;height:auto" onclick="style.border='1vw solid red';style.borderRadius='5%';">
+  <img src="nehru.jpeg" alt="Google Groups" style="width:19%;height:auto" onclick="style.border='1vw solid red';style.borderRadius='5%';">
+  
+  </div>
+   <h2 style="text-align:center;font-weight:bold;font-size:5vw">Pick the odd one out?</h2>
+</div>
+<!-- -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Answer</h2>
+      </header>
+      <div class="w3-container">
+        <div id="answer" >
+		<h2 style="font-weight:bold;font-size:1.5vw;color:green"><span class="w3-bottombar w3-border-green">Logo :</span> Dr.A.P.J.Abdulkalam</h2>
+<div class="w3-container container " >
+ 
+
+  <div class="w3-card-4 w3-blue" style="width:100%">
+ 
+  <img src="abdulkalam.jpeg" alt="Google Groups" style="width:100%;height:auto" > 
+
+  
+  </div>
+
+</div>
+  <h2 style="text-align:center;font-weight:bold;font-size:2vw"><span style="color:green">Dr.A.P.J.Abdulkalam - He is a former president.<br></span> <span style="color:red">Others are former and present prime minister</span></h2>
+</div>
+<br>
+<div class="w3-container ">
+ 
+
+  <div class="w3-card-4" style="width:100%">
+  
+      <img src="indraGandhi.jpeg" alt="Google Groups" style="width:20%;height:auto" >
+  <img src="manmohanSingh.jpeg" alt="Google Groups" style="width:20%;height:auto" >
+  
+  <img src="modi.jpeg" alt="Google Groups" style="width:24%;height:auto" >
+  <img src="nehru.jpeg" alt="Google Groups" style="width:20%;height:auto" >
+  <div>
+  <h2 style="text-align:center;font-weight:bold;font-size:2vw">IndraGandhi , ManmohanSingh , Modi , Nehru respectively.</h2>
+  </div>
+  </div>
+   <h2 style="text-align:center;font-weight:bold;font-size:5vw"></h2>
+</div>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p onClick="location.href='odd_one_out_over.html'">Next</p>
+      </footer>
+    </div>
+  </div>
+</div>
+<!-- -->
+
+</body>
+</html>

@@ -1,0 +1,427 @@
+<DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+
+
+body {
+  background-image: url("background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+<!-- https://stackoverflow.com/questions/49812069/why-particles-js-does-not-work-correctly -->
+html {
+  width: 100%;
+  height: 100%;
+}
+#particles-js {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+<!--.mydiv {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:22em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: transparent;
+}-->
+.mydiv
+{
+ width:60%;
+ height:40%;
+ margin:0 auto;
+ background:#f7f7f7;
+ position:absolute;
+ left:40%;
+ right:50%
+ top:50%;
+ margin-left:-250px;
+ margin-top:-250px;
+ background-color: transparent;
+box-shadow: 5px 5px 5px blue;
+border:none;
+}
+.mydiv2 {
+ width:30%;
+ height:30%;
+ margin:0 auto;
+ background:red;
+ position:absolute;
+ left:20%;
+ top:65%;
+
+ background-color:  #ffffe6;
+box-shadow: 5px 5px 5px red;
+border:none;
+ 
+}
+.mydiv3 {
+ width:20%;
+ height:25%;
+ margin:0 auto;
+ background:red;
+ position:absolute;
+ left:70%;
+ top:65%;
+
+ background-color: red;
+box-shadow: 1px 2.5px 5px 1px blue;
+border:none;
+ 
+}
+.mydiv4 {
+ width:10%;
+ height:5%;
+ margin:0 auto;
+ background:red;
+ position:absolute;
+ left:70%;
+ top:90%;
+
+ background-color: red;
+box-shadow: 1px 2.5px 5px 1px blue;
+border:none;
+ 
+}
+.flex-container {
+margin:auto;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: DodgerBlue;
+     left:40%;
+    right:50%;
+	 top:50%;
+     height: 40%;
+  width: 60%;
+    background-color: transparent;
+box-shadow: 5px 5px 5px blue;
+border:none;
+}
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  font-weight:bold;
+   width:100%;
+ height:100%;
+ 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ 
+  cursor: pointer;
+}
+
+</style>
+<style>
+.buttonmodel {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  vertical-align:center;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button2:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+</style>
+<script>
+function validate(){
+//var ans=document.getElementById("answer").value;
+
+//https://stackoverflow.com/questions/3869535/how-to-get-the-selected-radio-button-value-using-js
+//var ans = document.querySelector('input[name = "answer"]:checked').value;
+var ans ="sundar pichai";
+var correct_ans="Lars Rasmussen";
+
+if (ans == correct_ans)
+{
+document.getElementById("correct_ans").click();
+
+var sou = new Audio('applause.mp3');
+sou.play();
+}
+else{
+document.getElementById("wrong_ans").click();
+var sou = new Audio('laughter.mp3');
+sou.play();
+document.getElementById("answer").disabled=true;
+document.getElementById("answer1").disabled=true;
+document.getElementById("answer2").disabled=true;
+
+}
+}
+function validate1(){
+//var ans=document.getElementById("answer").value;
+
+//https://stackoverflow.com/questions/3869535/how-to-get-the-selected-radio-button-value-using-js
+//var ans = document.querySelector('input[name = "answer"]:checked').value;
+var ans ="Lars Rasmussen";
+var correct_ans="Lars Rasmussen";
+
+if (ans == correct_ans)
+{
+document.getElementById("correct_ans").click();
+
+var sou = new Audio('applause.mp3');
+sou.play();
+}
+else{
+document.getElementById("wrong_ans").click();
+var sou = new Audio('laughter.mp3');
+sou.play();
+document.getElementById("answer").disabled=true;
+document.getElementById("answer1").disabled=true;
+document.getElementById("answer2").disabled=true;
+
+}
+}
+function validate2(){
+//var ans=document.getElementById("answer").value;
+
+//https://stackoverflow.com/questions/3869535/how-to-get-the-selected-radio-button-value-using-js
+//var ans = document.querySelector('input[name = "answer"]:checked').value;
+var ans ="Larry Page";
+var correct_ans="Lars Rasmussen";
+
+if (ans == correct_ans)
+{
+document.getElementById("correct_ans").click();
+
+var sou = new Audio('applause.mp3');
+sou.play();
+}
+else{
+document.getElementById("wrong_ans").click();
+var sou = new Audio('laughter.mp3');
+sou.play();
+document.getElementById("answer").disabled=true;
+document.getElementById("answer1").disabled=true;
+document.getElementById("answer2").disabled=true;
+
+}
+}
+function attempt(){
+document.getElementById("image1").style.display="none";
+document.getElementById("image3").style.display="none";
+document.getElementById("image2").style.display="block";
+document.getElementById("clue").style.display="block";
+
+document.getElementById("wrong_ans").click();
+
+var timeleft = 5;
+var snd = new Audio('buzzer.mp3');
+var downloadTimer = setInterval(function(){
+  document.getElementById("mydiv3").innerHTML = timeleft ;
+  timeleft -= 1;
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("mydiv3").innerHTML = "OVER"
+	snd.play();
+	 document.getElementById("answer").disabled=false;
+	  document.getElementById("answer1").disabled=false;
+	   document.getElementById("answer2").disabled=false;
+	 
+	
+  }
+}, 1000);
+}
+function answer(){
+document.getElementById("image1").style.display="none";
+document.getElementById("image2").style.display="none";
+document.getElementById("image3").style.display="block";
+document.getElementById("slide2").style.display="block";
+document.getElementById("correct_ans").click();
+}
+
+
+</script>
+<script>
+function slide2() {
+  window.location.href = "http://www.w3schools.com";
+}
+</script>
+</head>
+<body >
+<!--<div >
+ <img src="cyborgzzlogo.png" alt="CYBORGZZ"/ style="width:10%;height:10" >
+</div>-->
+<div style="padding-left:50%" >
+<h2 style="color:red;font-weight:bold;padding:2%">Brain Fizz</h2>
+
+</div>
+<!-- https://www.w3schools.com/css/css3_flexbox.asp -->
+<div class="flex-container">
+<img src="lars-rasmussen-wave_google_map-01.jpeg" id="image1" width="100%" height="100%">
+<img src="lars-rasmussen-wave_google_map-02.jpeg" id="image2" width="100%" height="100%" style="display:none">
+<img src="lars-rasmussen-wave_google_map.jpg" id="image3" width="100%" height="100%" style="display:none">
+</div>
+
+<div id="particles-js"></div>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<br>
+<label id="clue" style="text-align:center;font-size:25px;color:white;display:none">He is the founder of a google product!!</label>
+<div class="mydiv2">
+<div style="text-align:center;font-size:20px;background-color:red"><label>YOUR ANSWER</label></div>
+<br>
+
+<!--<input type="text" id="answer" disabled>-->
+<!--<input type="radio" value="sundar pichai" id="answer" name="answer" disabled>sundar pichai<br>
+<input type="radio" id="answer1" name="answer" disabled>Satya Nadella<br>
+<input type="radio" id="answer2" name="answer" disabled>Tim cook<br>-->
+<div style="font-size:20px;"><input type="button" style="border:none;background-color:#ffffe6" value="Sundar pichai" onclick="validate()"></div><br>
+<div style="font-size:20px;"><input type="button" style="border:none;background-color:#ffffe6" value="Lars Rasmussen" onclick="validate1()" ></div><br>
+<div style="font-size:20px;"><input type="button" style="border:none;background-color:#ffffe6" value="Larry Page" onclick="validate2()" ></div><br>
+
+<!--<input type="button" id="button" value="check"  onclick="validate()">-->
+</div>
+
+<div class="mydiv3" >
+<div style="background-color:white;text-align:center;font-size:30px;">
+<label >TIMER</label>
+</div>
+<div id="mydiv3" style="font-size:60px;text-align:center">
+
+</div>
+
+</div>
+<br>
+<div class="mydiv4" id="slide2" style="display:none" >
+
+    <input type="button" class="button" value="next"  onClick="location.href='slide2/test.html'" >
+	
+
+
+</div>
+<!-- 
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_audio_play 
+https://stackoverflow.com/questions/21815323/have-sound-play-when-alert-is-triggered
+ -->
+<script>
+
+var timeleft = 5;
+
+
+var snd = new Audio('buzzer.mp3');
+var downloadTimer = setInterval(function(){
+  document.getElementById("mydiv3").innerHTML = timeleft ;
+  timeleft -= 1;
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("mydiv3").innerHTML = "OVER"
+	 document.getElementById("answer").disabled=false;
+	 	 document.getElementById("answer1").disabled=false;
+		 	 document.getElementById("answer2").disabled=false;
+
+snd.play();
+  }
+}, 1000);
+</script>
+
+<div id="image1">
+
+<div class="container" >
+  <!-- Trigger the modal with a button -->
+  <input type="hidden" class="btn btn-info btn-lg" id="correct_ans" data-toggle="modal" data-target="#myModal" >
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="color:green;">RIGHT </h4>
+        </div>
+        <div class="modal-body">
+          <!--<p style="color:green;font-size:25px">Attempt 1</p>-->
+		  
+		  <h3 style="color:green;font-size:25px">Lars-Rasmussen </h3>
+          <img src="right.png" alt="right" style="vertical-align:center"width="50%" height="auto">
+		  
+		  <br>
+		  
+		<input type="button" class="buttonmodel button1" value="view" onclick="answer()">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <input type="hidden" class="btn btn-info btn-lg" id="wrong_ans" data-toggle="modal" data-target="#myModal1" >
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="color:red;">Wrong</h4>
+        </div>
+        <div class="modal-body">
+		<!--<p style="color:red;font-size:25px">Attempt 1</p>-->
+          <img src="wrong.png" alt="wrong" style="vertical-align:center"width="50%" height="auto">
+        </div>
+		<br>
+		<input type="button" value="Try"  class="buttonmodel button2" onclick="attempt()">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+</body>
+</html>

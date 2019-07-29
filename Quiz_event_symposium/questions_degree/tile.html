@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="fafa_wrong.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+</style>
+<script>
+function wrong(){
+
+document.getElementById('wrong1').style.display='block';
+}
+</script>
+</head>
+<body style="background-image:url('background.jpg')">
+
+<div style="padding-left:45%" >
+<h2 style="color:red;font-weight:bold;padding:2%;font-size:3vw">Brain Fizz</h2>
+
+</div>>
+<!-- -->
+<div style="padding-right:15%;float:left;" >
+&nbsp;&nbsp;
+</div>
+<!-- -->
+<div class="w3-container " style="width:100%;height:auto">
+ 
+
+<div class="w3-card-4" >
+  <div class="flip-card " style="width:15%;float:left;height:200px;border-radius:55%" id="img1">
+  <div class="flip-card-inner " style="border-radius: 15px 50px 30px 5px;" >
+    <div class="flip-card-front" style="height:auto">
+      <img src="one_logo.png" alt="Avatar" style="width:100%;height:100%">
+    </div>
+    <div class="flip-card-back" style="height:auto">
+      <h1 style="font-size:3vw">Question</h1>
+      <p style="font-weight:bold;font-size:2vw;color:red">DBMS</p> 
+      <button style="font-size:2vw" onclick="document.getElementById('dbms').style.display='block'"
+class="w3-button">Open</button>
+    </div>
+  </div>
+</div>
+<div style="width:10%;float:left;">
+&nbsp;
+</div>
+<!-- -->
+<div class="flip-card" style="width:15%;float:left;height:200px;" id="img2">
+  <div class="flip-card-inner" >
+    <div class="flip-card-front" style="height:auto">
+      <img src="two_logo.svg" alt="Avatar" style="width:100%;height:100%;background-color:white">
+	  
+    </div>
+        <div class="flip-card-back" style="height:auto">
+      <h1 style="font-size:3vw">Question</h1>
+      <p style="font-weight:bold;font-size:2vw;color:red">DBMS</p> 
+      <button style="font-size:2vw" onclick="document.getElementById('c_program').style.display='block'"
+class="w3-button">Open</button>
+    </div>
+  </div>
+</div>
+<!-- -->
+<div style="width:10%;float:left;">
+&nbsp;
+</div>
+<div class="flip-card" style="width:15%;float:left;height:200px;" id="img3">
+  <div class="flip-card-inner" >
+    <div class="flip-card-front" style="height:auto">
+      <img src="three_logo.jpg" alt="Avatar" style="width:100%;height:100%;background-color:white">
+    </div>
+   <div class="flip-card-back" style="height:auto">
+      <h1 style="font-size:3vw">Question</h1>
+      <p style="font-weight:bold;font-size:2vw;color:red">DataStructure</p> 
+      <button style="font-size:2vw" onclick="document.getElementById('DataStructure').style.display='block'"
+class="w3-button">Open</button>
+    </div>
+  </div>
+</div>
+<!-- -->
+<div style="width:10%;float:left;">
+&nbsp;
+</div>
+<div class="flip-card" style="width:15%;float:left;height:200px;" id="img4">
+  <div class="flip-card-inner" >
+    <div class="flip-card-front" style="height:auto">
+      <img src="four_logo.jpg" alt="Avatar" style="width:100%;height:100%">
+    </div>
+   <div class="flip-card-back" style="height:auto">
+      <h1 style="font-size:3vw">Question</h1>
+      <p style="font-weight:bold;font-size:2vw;color:red">Networking</p> 
+      <button style="font-size:2vw" onclick="document.getElementById('networking').style.display='block'"
+class="w3-button">Open</button>
+    </div>
+  </div>
+</div>
+<!-- -->
+
+<!-- -->
+
+</div>
+
+</div>
+<div style="padding:8%;display:none">
+
+</div>
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<br>
+
+<br>
+<div style="width:10%;float:left;">
+&nbsp;
+</div>
+<!-- -->
+<div class="w3-container " style="width:100%;height:auto">
+ 
+
+<div class="w3-card-4" >
+  <div class="flip-card" style="width:15%;float:left;height:200px;" id="img5">
+  <div class="flip-card-inner" >
+    <div class="flip-card-front" style="height:auto" >
+      <img src="five_logo.jpg" alt="Avatar" style="width:100%;height:100%">
+    </div>
+   <div class="flip-card-back" style="height:auto">
+      <h1 style="font-size:3vw">Question</h1>
+      <p style="font-weight:bold;font-size:2vw;color:red">JAVA</p> 
+      <button style="font-size:2vw" onclick="document.getElementById('java').style.display='block'"
+class="w3-button">Open</button>
+    </div>
+  </div>
+</div>
+<div style="width:10%;float:left;">
+&nbsp;
+</div>
+<!-- -->
+<div class="flip-card" style="width:15%;float:left;height:200px;" id="img6">
+  <div class="flip-card-inner" >
+    <div class="flip-card-front" style="height:auto">
+      <img src="six_logo.jpg" alt="Avatar" style="width:100%;height:100%">
+    </div>
+    <div class="flip-card-back" style="height:auto">
+      <h1 style="font-size:3vw">Question</h1>
+      <p style="font-weight:bold;font-size:2vw;color:red">OS</p> 
+      <button style="font-size:2vw" onclick="document.getElementById('OperatingSystem').style.display='block'"
+class="w3-button">Open</button>
+    </div>
+  </div>
+</div>
+<!-- -->
+<div style="width:10%;float:left;">
+&nbsp;
+</div>
+<div class="flip-card" style="width:15%;float:left;height:200px;" id="img7">
+  <div class="flip-card-inner" >
+    <div class="flip-card-front" style="height:auto">
+      <img src="seven_logo.png" alt="Avatar" style="width:100%;height:100%" onclick="document.getElementById('iot').style.display='block';style.border='1vw solid green';style.borderRadius='5%';">
+    </div>
+    <div class="flip-card-back" style="height:auto">
+      <h1 style="font-size:3vw">Question</h1>
+      <p style="font-weight:bold;font-size:2vw;color:red">IOT</p> 
+      <button style="font-size:2vw" onclick="document.getElementById('iot').style.display='block'"
+class="w3-button">Open</button>
+    </div>
+  </div>
+</div>
+<!-- -->
+<div style="width:10%;float:left;">
+&nbsp;
+</div>
+<div class="flip-card" style="width:15%;float:left;height:200px;" id="img8">
+  <div class="flip-card-inner" >
+    <div class="flip-card-front" style="height:auto">
+      <img src="eight_logo.jpg" alt="Avatar" style="width:100%;height:100%">
+    </div>
+        <div class="flip-card-back" style="height:auto">
+      <h1 style="font-size:3vw">Question</h1>
+      <p style="font-weight:bold;font-size:2vw;color:red">C LANGUAGE</p> 
+      <button style="font-size:2vw" onclick="document.getElementById('cCode').style.display='block'"
+class="w3-button">Open</button>
+    </div>
+  </div>
+</div>
+<!-- -->
+
+<!-- -->
+
+</div>
+
+</div>
+<!-- -->
+<div id="dbms" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('dbms').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 style="font-size:3vw">Question</h2>
+      </header>
+      <div class="w3-container">
+        <div id="answer" >
+	
+<div class="w3-container container "  >
+ 
+
+  <div class="w3-card-4 " style="font-size:2vw" style="width:100%">
+ODBC stands for?
+<ol style="font-size:2vw">
+ <li id="wrong1" onclick="document.getElementById('wrong1').style.color='red';document.getElementById('wrong1').style.fontWeight='bold'">Object DataBase Connectivity</li>
+ <li id="wrong2" onclick="document.getElementById('wrong2').style.color='red';document.getElementById('wrong2').style.fontWeight='bold'">Oral DataBase Connectivity</li>
+ <li id="correct" onclick="document.getElementById('correct').style.color='green';document.getElementById('correct').style.fontWeight='bold'">Oracle DataBase Connectivity</li>
+ <li id="wrong3" onclick="document.getElementById('wrong3').style.color='red';document.getElementById('wrong3').style.fontWeight='bold'">All of the above</li>
+</ol>
+  </div>
+
+</div>
+
+</div>
+<br>
+
+      </div>
+      <footer class="w3-container w3-teal">
+       <p onClick="document.getElementById('img1').hidden='true';document.getElementById('dbms').style.display='none'">Next</p>
+      </footer>
+    </div>
+  </div>
+  <!-- -->
+  
+  <div id="DataStructure" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('DataStructure').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 style="font-size:3vw">Question</h2>
+      </header>
+      <div class="w3-container">
+        <div id="answer" >
+	
+<div class="w3-container container " >
+ 
+
+  <div class="w3-card-4  " style="font-size:2vw;width:100%">
+ 
+ The number of edges from the root to the node is called __________ of the tree.
+<ol style="font-size:2vw">
+ <li id="wrong4" onclick="document.getElementById('wrong4').style.color='red';document.getElementById('wrong4').style.fontWeight='bold'">Height</li>
+ <li id="wrong5" onclick="document.getElementById('wrong5').style.color='red';document.getElementById('wrong5').style.fontWeight='bold'">Depth</li>
+ <li id="wrong6" onclick="document.getElementById('wrong6').style.color='red';document.getElementById('wrong6').style.fontWeight='bold'">Node</li>
+ <li id="correct1" onclick="document.getElementById('correct1').style.color='green';document.getElementById('correct1').style.fontWeight='bold'">None of the mentioned
+</li>
+</ol>
+  </div>
+
+</div>
+
+</div>
+<br>
+
+      </div>
+      <footer class="w3-container w3-teal">
+       <p onClick="document.getElementById('img3').hidden='true';document.getElementById('c_program').style.display='none'">Next</p>
+      </footer>
+    </div>
+  </div>
+  <!-- -->
+  <div id="c_program" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('c_program').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 style="font-size:3vw">Question</h2>
+      </header>
+      <div class="w3-container">
+        <div id="answer" >
+	
+<div class="w3-container container " >
+ 
+
+  <div class="w3-card-4 " style="font-size:2vw;width:100%">
+ 
+  Which operator perfoms pattern matching?
+<ol style="font-size:2vw">
+ <li id="wrong7" onclick="document.getElementById('wrong7').style.color='red';document.getElementById('wrong7').style.fontWeight='bold'">Between operator</li>
+ <li id="correct2" onclick="document.getElementById('correct2').style.color='green';document.getElementById('correct2').style.fontWeight='bold'">Like operator</li>
+ <li id="wrong8" onclick="document.getElementById('wrong8').style.color='red';document.getElementById('wrong8').style.fontWeight='bold'">Exists operator</li>
+ <li id="wrong9" onclick="document.getElementById('wrong9').style.color='red';document.getElementById('wrong9').style.fontWeight='bold'">None of these</li>
+</ol>
+  </div>
+
+</div>
+
+</div>
+<br>
+
+      </div>
+      <footer class="w3-container w3-teal">
+       <p onClick="document.getElementById('img2').hidden='true';document.getElementById('c_program').style.display='none'">Next</p>
+      </footer>
+    </div>
+  </div>  
+  <!-- -->
+  
+  <div id="java" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('java').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 style="font-size:3vw">Question</h2>
+      </header>
+      <div class="w3-container">
+        <div id="answer" >
+	
+<div class="w3-container container " >
+ 
+
+  <div class="w3-card-4 " style="width:100%;font-size:2vw">
+ 
+  Which keyword is used to explicitly throw an exception?
+<ol style="font-size:2vw">
+ <li id="wrong10" onclick="document.getElementById('wrong10').style.color='red';document.getElementById('wrong10').style.fontWeight='bold'">Try</li>
+ <li id="wrong11" onclick="document.getElementById('wrong11').style.color='red';document.getElementById('wrong11').style.fontWeight='bold'">Throwing</li>
+ <li id="wrong12" onclick="document.getElementById('wrong12').style.color='red';document.getElementById('wrong12').style.fontWeight='bold'">Catch</li>
+ <li id="correct3" onclick="document.getElementById('correct3').style.color='green';document.getElementById('correct3').style.fontWeight='bold'">Throw</li>
+</ol>
+  </div>
+
+</div>
+
+</div>
+<br>
+
+      </div>
+      <footer class="w3-container w3-teal">
+       <p onClick="document.getElementById('img5').hidden='true';document.getElementById('java').style.display='none'">Next</p>
+      </footer>
+    </div>
+  </div>  -->
+  <!-- -->
+    <div id="networking" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('networking').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 style="font-size:3vw">Question</h2>
+      </header>
+      <div class="w3-container">
+        <div id="answer" >
+	
+<div class="w3-container container " >
+ 
+
+  <div class="w3-card-4 " style="width:100%;font-size:2vw">
+ 
+  Which of the following services use TCP? 
+<ol style="font-size:2vw">
+ <li id="wrong10" onclick="document.getElementById('wrong10').style.color='red';document.getElementById('wrong10').style.fontWeight='bold'">DHCP</li>
+ <li>SMTP</li>
+ <li>HTTP</li>
+ <li>TFTP</li>
+ <li>FTP</li>
+</ol>
+Choice:
+<ul style="list-style-type: none;">
+<li id="wrong13" onclick="document.getElementById('wrong13').style.color='red';document.getElementById('wrong13').style.fontWeight='bold'"><span style="font-weight:bold">A.</span>	1 and 2</li>
+<li id="correct4" onclick="document.getElementById('correct4').style.color='green';document.getElementById('correct4').style.fontWeight='bold'"><span style="font-weight:bold">B.</span>	2, 3 and 5</li>
+<li id="wrong14" onclick="document.getElementById('wrong14').style.color='red';document.getElementById('wrong14').style.fontWeight='bold'"><span style="font-weight:bold">C.</span>	1, 2 and 4</li>
+<li id="wrong15" onclick="document.getElementById('wrong15').style.color='red';document.getElementById('wrong15').style.fontWeight='bold'"><span style="font-weight:bold">D.</span>	1, 3 and 4</li>
+</ul>
+  </div>
+
+</div>
+
+</div>
+<br>
+
+      </div>
+      <footer class="w3-container w3-teal">
+       <p onClick="document.getElementById('img4').hidden='true';document.getElementById('networking').style.display='none'">Next</p>
+      </footer>
+    </div>
+  </div>  
+  <!-- -->
+   <div id="OperatingSystem" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('OperatingSystem').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 style="font-size:3vw">Question</h2>
+      </header>
+      <div class="w3-container">
+        <div id="answer" >
+	
+<div class="w3-container container " >
+ 
+
+  <div class="w3-card-4 " style="width:100%;font-size:2vw">
+ 
+  Which of the following requires a device driver?
+<ol style="font-size:2vw">
+ <li id="wrong18" onclick="document.getElementById('wrong18').style.color='red';document.getElementById('wrong18').style.fontWeight='bold'">Register</li>
+ <li id="wrong16" onclick="document.getElementById('wrong16').style.color='red';document.getElementById('wrong16').style.fontWeight='bold'">Cache</li>
+ <li id="wrong17" onclick="document.getElementById('wrong17').style.color='red';document.getElementById('wrong17').style.fontWeight='bold'">Main memory</li>
+ <li id="correct5" onclick="document.getElementById('correct5').style.color='green';document.getElementById('correct5').style.fontWeight='bold'">Disk</li>
+ 
+</ol>
+  </div>
+
+</div>
+
+</div>
+<br>
+
+      </div>
+      <footer class="w3-container w3-teal">
+       <p onClick="document.getElementById('img6').hidden='true';document.getElementById('OperatingSystem').style.display='none'">Next</p>
+      </footer>
+    </div>
+  </div>  
+  <!-- -->
+  <div id="iot" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('iot').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 style="font-size:3vw">Question</h2>
+      </header>
+      <div class="w3-container">
+        <div id="answer" >
+	
+<div class="w3-container container " >
+ 
+
+  <div class="w3-card-4 " style="width:100%;font-size:2vw" >
+ 
+  MQTT is _________ protocol.
+<ol style="font-size:2vw">
+ <li id="correct6" onclick="document.getElementById('correct6').style.color='green';document.getElementById('correct6').style.fontWeight='bold'">Machine to Machine</li>
+ <li id="wrong19" onclick="document.getElementById('wrong19').style.color='red';document.getElementById('wrong19').style.fontWeight='bold'">Internet of Things</li>
+ <li id="wrong20" onclick="document.getElementById('wrong20').style.color='red';document.getElementById('wrong20').style.fontWeight='bold'">Machine to Machine and Internet of Things</li>
+ <li id="wrong21" onclick="document.getElementById('wrong21').style.color='red';document.getElementById('wrong21').style.fontWeight='bold'">Machine Things</li>
+ 
+</ol>
+  </div>
+
+</div>
+
+</div>
+<br>
+
+      </div>
+      <footer class="w3-container w3-teal">
+       <p onClick="document.getElementById('img7').hidden='true';document.getElementById('iot').style.display='none'">Next</p>
+      </footer>
+    </div>
+  </div>  
+  <!-- -->
+    <div id="cCode" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('cCode').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 style="font-size:3vw">Question</h2>
+      </header>
+      <div class="w3-container">
+        <div id="answer" >
+	
+<div class="w3-container container " >
+ 
+
+  <div class="w3-card-4 " style="width:100%;font-size:2vw">
+ 
+  First operating system designed using C programming language.
+<ol style="font-size:2vw">
+ <li id="wrong22" onclick="document.getElementById('wrong22').style.color='red';document.getElementById('wrong22').style.fontWeight='bold'">DOS</li>
+ <li id="wrong23" onclick="document.getElementById('wrong23').style.color='red';document.getElementById('wrong23').style.fontWeight='bold'">WINDOWS</li>
+ <li id="correct7" onclick="document.getElementById('correct7').style.color='green';document.getElementById('correct7').style.fontWeight='bold'">UNIX</li>
+ <li id="wrong24" onclick="document.getElementById('wrong24').style.color='red';document.getElementById('wrong24').style.fontWeight='bold'">MAC</li>
+ 
+</ol>
+  </div>
+
+</div>
+
+</div>
+<br>
+
+      </div>
+      <footer class="w3-container w3-teal">
+       <p onClick="document.getElementById('img8').hidden='true';document.getElementById('cCode').style.display='none'">Next</p>
+      </footer>
+    </div>
+  </div>  
+  <!-- -->
+</body>
+
+</html>
